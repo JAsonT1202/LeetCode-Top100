@@ -22,19 +22,6 @@ class Solution(object):
             reverse(node.right)
         
         reverse(root)
-
-        result = []
-
-        def order(node):
-            if node is None:
-                return
-            
-            result.append(node.val)
-            order(node.right)
-            order(node.left)
-        
-        order(root)
-        
         return root
 
 
